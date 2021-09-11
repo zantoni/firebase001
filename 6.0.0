@@ -1,0 +1,8 @@
++ @angular/platform-browser-dynamic@12.2.5
+updated 1 package and audited 1414 packages in 13.037s
+
+88 packages are looking for funding
+  run `npm fund` for details
+
+found 1 moderate severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details

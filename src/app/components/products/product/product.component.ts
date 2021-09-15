@@ -18,7 +18,7 @@ import { Product } from '../../../models/product';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(public productService : ProductService) { }
+  constructor(public productService : ProductService ) { }
 
   ngOnInit(): void {
 
@@ -34,7 +34,7 @@ export class ProductComponent implements OnInit {
     this.productService.updateProduct(productForm.value);
     
     this.resetForm(productForm);
-    //this.toastr.success('Sucessful Operation', 'Product Registered');
+//    this.toastr.success('Sucessful Operation', 'Product Registered');
   }
 
   resetForm(productForm?: NgForm)

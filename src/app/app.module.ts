@@ -15,6 +15,11 @@ import { ProductComponent } from './components/products/product/product.componen
 // Servicios
  import { ProductService } from './services/product.service'; 
 
+ // Toastr
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +31,10 @@ import { ProductComponent } from './components/products/product/product.componen
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
+    
   ],
   providers: [
     ProductService
